@@ -33,3 +33,11 @@ Daily physics-simulation Shorts for YouTube, TikTok and Instagram.
 ## Layout rule (safe zone)
 Platform UI (username, caption, buttons) covers roughly the bottom 25 % and the right edge of the screen.
 Keep all text and the main action between y ≈ 150 and y ≈ 1500 (of 1920). Circle: center y 900, radius 400.
+
+## Learnings (keep updated)
+Living notes on what works. Update after every weekly review and every comment session.
+- Comments: prefer short, playful replies that ask a follow-up question ("What should we simulate next?") – questions keep threads alive.
+- (add findings here: which ideas/hooks/lengths performed best, which reply styles got likes/replies)
+
+## Comment reply log
+`state/reply_log.md` – date, platform, video, comment, our reply, reaction (likes/replies) a few days later.
