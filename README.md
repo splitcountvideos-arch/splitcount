@@ -28,4 +28,8 @@ Daily physics-simulation Shorts for YouTube, TikTok and Instagram.
 | Date | Idea | Languages |
 |---|---|---|
 | 2026-11-22 | Ball splits on every wall hit – how fast to 2000? | EN, DE, TR |
-| 2026-11-22 | TikTok long: 16.5% split chance – 10,000 before 1 minute? (67 s, missed: 63.4 s) | EN |
+| 2026-11-22 | (v2: texts moved out of the bottom UI zone) TikTok long: 16.5% split chance – 10,000 before 1 minute? (67 s, missed: 63.4 s) | EN |
+
+## Layout rule (safe zone)
+Platform UI (username, caption, buttons) covers roughly the bottom 25 % and the right edge of the screen.
+Keep all text and the main action between y ≈ 150 and y ≈ 1500 (of 1920). Circle: center y 900, radius 400.

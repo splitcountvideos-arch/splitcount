@@ -2,7 +2,7 @@ import numpy as np, subprocess, wave, colorsys, sys, json
 TX=json.loads(sys.argv[1]); OUT=sys.argv[2]
 from PIL import Image, ImageDraw, ImageFont
 W,H,FPS,DUR=1080,1920,30,22
-CX,CY,R=W/2,1060,440
+CX,CY,R=W/2,900,400
 MAX=2000
 rng=np.random.default_rng(7)
 pos=np.array([[CX,CY-150.0]]); vel=np.array([[260.0,-120.0]]); hue=np.array([0.0])
@@ -42,11 +42,11 @@ for fr in range(FPS*DUR):
     for p,hh in zip(pos,hue):
         r,g_,b=[int(x*255) for x in colorsys.hsv_to_rgb(hh,0.85,1)]
         dr.ellipse([p[0]-9,p[1]-9,p[0]+9,p[1]+9],fill=(r,g_,b))
-    dr.text((W/2,230),TX["l1"],font=f2,anchor="mm",fill=(255,255,255))
-    dr.text((W/2,310),TX["l2"],font=f2,anchor="mm",fill=(255,210,60))
-    dr.text((W/2,480),f"{len(pos)}",font=font,anchor="mm",fill=(255,255,255))
-    dr.text((W/2,1640),TX["q"],font=f3,anchor="mm",fill=(200,200,220))
-    dr.text((W/2,1720),(f"{t:4.1f} {TX['s']}" if done is None else TX["done"].format(done)),font=f3,anchor="mm",fill=(120,220,140))
+    dr.text((W/2,190),TX["l1"],font=f2,anchor="mm",fill=(255,255,255))
+    dr.text((W/2,265),TX["l2"],font=f2,anchor="mm",fill=(255,210,60))
+    dr.text((W/2,390),f"{len(pos)}",font=font,anchor="mm",fill=(255,255,255))
+    dr.text((W/2,1370),TX["q"],font=f3,anchor="mm",fill=(200,200,220))
+    dr.text((W/2,1445),(f"{t:4.1f} {TX['s']}" if done is None else TX["done"].format(done)),font=f3,anchor="mm",fill=(120,220,140))
     ff.stdin.write(img.tobytes())
 ff.stdin.close(); ff.wait()
 a=np.clip(audio,-1,1); 

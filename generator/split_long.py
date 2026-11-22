@@ -2,7 +2,7 @@
 Milestone banners at 100 / 1,000 / 5,000 / 10,000. Usage: python3 split_long.py OUT.mp4 [P] [--dry]"""
 import numpy as np, subprocess, wave, colorsys, sys
 OUT=sys.argv[1]; P=float(sys.argv[2]) if len(sys.argv)>2 else 0.12; DRY="--dry" in sys.argv
-W,H,FPS=1080,1920,30; CX,CY,R=W/2,1060,440; MAX=10000; MAXDUR=80
+W,H,FPS=1080,1920,30; CX,CY,R=W/2,900,400; MAX=10000; MAXDUR=80
 rng=np.random.default_rng(11)
 pos=np.array([[CX,CY-150.0]]); vel=np.array([[260.0,-120.0]]); hue=np.array([0.0])
 g=np.array([0,500.0]); dt=1/FPS; sub=3
@@ -45,17 +45,16 @@ while True:
         dr.ellipse([CX-R-6,CY-R-6,CX+R+6,CY+R+6],outline=(240,240,255),width=6)
         cols=[tuple(int(x*255) for x in colorsys.hsv_to_rgb(hh,0.85,1)) for hh in hue]
         for p,col in zip(pos,cols): dr.ellipse([p[0]-br,p[1]-br,p[0]+br,p[1]+br],fill=col)
-        dr.text((W/2,200),"Every wall hit has a",font=f2,anchor="mm",fill=(255,255,255))
-        dr.text((W/2,280),"chance to split the ball!",font=f2,anchor="mm",fill=(255,210,60))
-        dr.text((W/2,460),f"{n:,}",font=font,anchor="mm",fill=(255,255,255))
+        dr.text((W/2,190),"Every wall hit has a",font=f2,anchor="mm",fill=(255,255,255))
+        dr.text((W/2,265),"chance to split the ball!",font=f2,anchor="mm",fill=(255,210,60))
+        dr.text((W/2,375),f"{n:,}",font=font,anchor="mm",fill=(255,255,255))
         # milestone flash
         for m,mt in mil_t.items():
-            if 0<=t-mt<1.2 and m<MAX: dr.text((W/2,590),f"{m:,} reached!",font=f3,anchor="mm",fill=(120,220,140))
-        dr.text((W/2,1580),"Will it hit 10,000",font=f3,anchor="mm",fill=(200,200,220)); dr.text((W/2,1645),"before 1 minute?",font=f3,anchor="mm",fill=(200,200,220))
-        if done is None: dr.text((W/2,1730),f"{t:4.1f} s",font=f3,anchor="mm",fill=(120,220,140))
+            if 0<=t-mt<1.2 and m<MAX: dr.text((W/2,462),f"{m:,} reached!",font=f3,anchor="mm",fill=(120,220,140))
+        dr.text((W/2,1360),"Will it hit 10,000",font=f3,anchor="mm",fill=(200,200,220)); dr.text((W/2,1420),"before 1 minute?",font=f3,anchor="mm",fill=(200,200,220))
+        if done is None: dr.text((W/2,1490),f"{t:4.1f} s",font=f3,anchor="mm",fill=(120,220,140))
         else:
-            ok=done<60; dr.text((W/2,1735),(f"YES! {done:.1f} s" if ok else f"NO! {done:.1f} s"),font=f4,anchor="mm",fill=(120,220,140) if ok else (255,90,90))
-        dr.text((W/2,1840),"Comment your guess!",font=f3,anchor="mm",fill=(150,150,170))
+            ok=done<60; dr.text((W/2,1495),(f"YES! {done:.1f} s" if ok else f"NO! {done:.1f} s"),font=f4,anchor="mm",fill=(120,220,140) if ok else (255,90,90))
         ff.stdin.write(img.tobytes())
     fr+=1
 print("done_at",done,"milestones",mil_t,"duration",fr/FPS)
