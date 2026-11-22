@@ -4,8 +4,17 @@ Daily physics-simulation Shorts for YouTube, TikTok and Instagram.
 
 ## Layout
 - `generator/` – Python scripts that render the videos (numpy + Pillow + ffmpeg)
+  - `split_sim.py` short version · `split_long.py` TikTok long version (`python3 generator/split_long.py OUT.mp4 0.165`)
 - `videos/` – finished videos, named `YYYY-MM-DD_<idea>_<LANG>.mp4`
 - `assets/` – profile picture, banner, watermark
+
+## Strategy (goal: revenue)
+- **TikTok first.** Creator Rewards (Germany): 10k followers, 100k views / 30 days, personal account, videos **> 1 minute**.
+  → Every day: a short version (8–25 s) for YouTube Shorts + Instagram Reels, and a **long version (61–75 s)** for TikTok.
+- **YouTube:** first milestone 500 subs + 3M Shorts views / 90 days (fan funding); ads need 1,000 subs + 20M Shorts views / 90 days from 1 Feb 2027.
+- **Every day a genuinely new rule/idea** – no near-duplicates (YouTube "inauthentic content" policy).
+- **Double down on winners:** if a video clearly outperforms, make a sequel/"part 2" within 1–2 days.
+- **Weekly review (Mondays):** pull Metricool analytics, compare platforms and ideas, adjust.
 
 ## Daily flow
 1. Pick an idea together, approve it.
@@ -19,3 +28,4 @@ Daily physics-simulation Shorts for YouTube, TikTok and Instagram.
 | Date | Idea | Languages |
 |---|---|---|
 | 2026-11-22 | Ball splits on every wall hit – how fast to 2000? | EN, DE, TR |
+| 2026-11-22 | TikTok long: 16.5% split chance – 10,000 before 1 minute? (67 s, missed: 63.4 s) | EN |
