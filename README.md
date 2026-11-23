@@ -4,6 +4,7 @@ Daily physics-simulation Shorts for YouTube, TikTok and Instagram.
 
 ## Layout
 - `generator/` – Python scripts that render the videos (numpy + Pillow + ffmpeg)
+  - `battle_royale.py` battle-royale (`STEER=.. EAT=.. python3 generator/battle_royale.py OUT SEED BITE TAKE0 [--long]`)
   - `split_sim.py` short version · `split_long.py` TikTok long version (`python3 generator/split_long.py OUT.mp4 0.165`)
 - `videos/` – finished videos, named `YYYY-MM-DD_<idea>_<LANG>.mp4`
 - `assets/` – profile picture, banner, watermark
@@ -29,6 +30,8 @@ Daily physics-simulation Shorts for YouTube, TikTok and Instagram.
 |---|---|---|
 | 2026-11-22 | Ball splits on every wall hit – how fast to 2000? | EN, DE, TR |
 | 2026-11-22 | (v2: texts moved out of the bottom UI zone) TikTok long: 16.5% split chance – 10,000 before 1 minute? (67 s, missed: 63.4 s) | EN |
+| 2026-11-23 | Battle royale: 12 colored balls, bigger eats smaller, zone shrinks – short 17 s (LIME wins) | EN |
+| 2026-11-23 | TikTok long: battle royale, 65.5 s, final duel decided at 1:01 (PURPLE wins) – `generator/battle_royale.py` | EN |
 
 ## Layout rule (safe zone)
 Platform UI (username, caption, buttons) covers roughly the bottom 25 % and the right edge of the screen.
