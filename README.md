@@ -53,6 +53,7 @@ Living notes on what works. Update after every weekly review and every comment s
 - 2026-11-23 (week 1 review): only 1 video live (22 Nov); TikTok 0 views after ~1 day, YouTube no data yet, Instagram post failed (account verification). Metricool analytics lag 1–2 days → judge a video only after ≥48 h. Fix IG verification before counting IG.
 - 2026-11-24: First comments came on YouTube. A 'this is a bug' comment started a 5-reply debate → debates drive engagement. Idea queued: 'no-cheating' version (wall-hit cooldown so sliding balls don't split every frame).
 - Tech: replying in YouTube Studio via the built-in browser – typing doesn't reach the textarea; use find('Yanıt ekleyin') → form_input on the textbox, then click the 'Yanıtla' button that follows 'İptal'.
+- 2026-11-24: TikTok shows 0 views on API-posted videos (new account posted via scheduler from day 1 → likely flagged). Warm-up until 2026-12-01: Marley uses TikTok normally 10–15 min/day; TikTok posts go out with autoPublish=false (Metricool push → Marley posts in the TikTok app, optionally adds a trending sound at low volume). Re-evaluate on 2026-12-02.
 - (add findings here: which ideas/hooks/lengths performed best, which reply styles got likes/replies)
 
 ## Comment reply log
