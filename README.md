@@ -34,6 +34,8 @@ Daily physics-simulation Shorts for YouTube, TikTok and Instagram.
 | 2026-11-23 | Battle royale: 12 colored balls, bigger eats smaller, zone shrinks – short 17 s (LIME wins) | EN |
 | 2026-11-23 | TikTok long: battle royale, 65.5 s, final duel decided at 1:01 (PURPLE wins) – `generator/battle_royale.py` | EN |
 | 2026-11-24 | Escape 15 spinning rings – short 18 s (gap 100°, seed 25, escaped 15.07 s) | EN |
+| 2026-11-24 | Comment-driven: 'No-cheating version' (1 split per real bounce, 0.6 s cooldown) + MVP crown – short 20 s, 2000 in 16.6 s (was 6.1 s) – `generator/split_fair.py` | EN |
+| 2026-11-24 | TikTok long: no-cheating to 10,000 (4.0 s cooldown) – 68 s, reached 64.5 s | EN |
 | 2026-11-24 | TikTok long: escape 15 rings before 1:00? 64 s, last ring from 0:52, escaped 59.70 s (gap 45°, seed 25) – `generator/escape_rings.py` | EN |
 
 ## Layout rule (safe zone)
