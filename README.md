@@ -5,6 +5,7 @@ Daily physics-simulation Shorts for YouTube, TikTok and Instagram.
 ## Layout
 - `generator/` – Python scripts that render the videos (numpy + Pillow + ffmpeg)
   - `battle_royale.py` battle-royale (`STEER=.. EAT=.. python3 generator/battle_royale.py OUT SEED BITE TAKE0 [--long]`)
+  - `escape_rings.py` escape the spinning rings (`GAP=45 python3 generator/escape_rings.py OUT SEED [--long] [--dry]`)
   - `split_sim.py` short version · `split_long.py` TikTok long version (`python3 generator/split_long.py OUT.mp4 0.165`)
 - `videos/` – finished videos, named `YYYY-MM-DD_<idea>_<LANG>.mp4`
 - `assets/` – profile picture, banner, watermark
@@ -32,6 +33,8 @@ Daily physics-simulation Shorts for YouTube, TikTok and Instagram.
 | 2026-11-22 | (v2: texts moved out of the bottom UI zone) TikTok long: 16.5% split chance – 10,000 before 1 minute? (67 s, missed: 63.4 s) | EN |
 | 2026-11-23 | Battle royale: 12 colored balls, bigger eats smaller, zone shrinks – short 17 s (LIME wins) | EN |
 | 2026-11-23 | TikTok long: battle royale, 65.5 s, final duel decided at 1:01 (PURPLE wins) – `generator/battle_royale.py` | EN |
+| 2026-11-24 | Escape 15 spinning rings – short 18 s (gap 100°, seed 25, escaped 15.07 s) | EN |
+| 2026-11-24 | TikTok long: escape 15 rings before 1:00? 64 s, last ring from 0:52, escaped 59.70 s (gap 45°, seed 25) – `generator/escape_rings.py` | EN |
 
 ## Layout rule (safe zone)
 Platform UI (username, caption, buttons) covers roughly the bottom 25 % and the right edge of the screen.
