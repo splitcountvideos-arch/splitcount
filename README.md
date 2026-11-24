@@ -42,6 +42,11 @@ Daily physics-simulation Shorts for YouTube, TikTok and Instagram.
 Platform UI (username, caption, buttons) covers roughly the bottom 25 % and the right edge of the screen.
 Keep all text and the main action between y ≈ 150 and y ≈ 1500 (of 1920). Circle: center y 900, radius 400.
 
+## Idea queue from comments (propose these first)
+When a comment sparks an idea, add it here; the daily idea session offers the top item as one of its 3 ideas and removes it once made.
+- [done 2026-11-24] 'It's a bug' → no-cheating version (split_fair.py)
+- MVP ball crown → follow one 'hero' ball through a whole video (does the crown ball survive / win?)
+
 ## Learnings (keep updated)
 Living notes on what works. Update after every weekly review and every comment session.
 - Comments: prefer short, playful replies that ask a follow-up question ("What should we simulate next?") – questions keep threads alive.
