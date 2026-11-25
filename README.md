@@ -57,6 +57,7 @@ Living notes on what works. Update after every weekly review and every comment s
 - 2026-11-24: First comments came on YouTube. A 'this is a bug' comment started a 5-reply debate → debates drive engagement. Idea queued: 'no-cheating' version (wall-hit cooldown so sliding balls don't split every frame).
 - Tech: replying in YouTube Studio via the built-in browser – typing doesn't reach the textarea; use find('Yanıt ekleyin') → form_input on the textbox, then click the 'Yanıtla' button that follows 'İptal'.
 - 2026-11-24: TikTok shows 0 views on API-posted videos (new account posted via scheduler from day 1 → likely flagged). Warm-up until 2026-12-01: Marley uses TikTok normally 10–15 min/day; TikTok posts go out with autoPublish=false (Metricool push → Marley posts in the TikTok app, optionally adds a trending sound at low volume). Re-evaluate on 2026-12-02.
+- EXPERIMENT 2026-11-26 → 2026-12-02 (simple vs complex): alternate days. Even dates (26, 28, 30, 2) = SIMPLE (one rule, one question, few objects); odd dates (27, 29, 1) = COMPLEX (many colors/teams, elimination, countries, multi-stage). All 3 daily ideas must match that day's type. Tag each Video log row with [simple]/[complex]. Monday review compares avg views, avg watch time and comments per type and decides the direction.
 - (add findings here: which ideas/hooks/lengths performed best, which reply styles got likes/replies)
 
 ## Comment reply log
