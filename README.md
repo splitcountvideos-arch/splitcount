@@ -40,6 +40,8 @@ Daily physics-simulation Shorts for YouTube, TikTok and Instagram.
 | 2026-11-24 | TikTok long: escape 15 rings before 1:00? 64 s, last ring from 0:52, escaped 59.70 s (gap 45°, seed 25) – `generator/escape_rings.py` | EN |
 | 2026-11-25 | Comment-driven: 'Can the crown survive?' 60 balls, growing+spinning red lava arc pops balls – short 23 s, crown loses the final duel (#2 at 18.7 s, seed 333) – `generator/crown_survival.py` | EN |
 | 2026-11-25 | TikTok long: crown survival, 80 balls, 69 s, final duel from 1:00, crown WINS at 65.4 s (seed 721, grow 180) | EN |
+| 2026-11-26 | [simple] Snake ball: touching its own tail = game over, tail grows each bounce – short 19 s, dies at 16.2 s (G=400 GROW=90 seed 7) – `generator/tail_snake.py` | EN |
+| 2026-11-26 | [simple] TikTok long: snake ball, can it survive 1:00? 65 s, 24 close calls, dies at 1:00.87 (GROW=30 seed 7) | EN |
 
 ## Layout rule (safe zone)
 Platform UI (username, caption, buttons) covers roughly the bottom 25 % and the right edge of the screen.
